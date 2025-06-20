@@ -306,6 +306,14 @@ footer {
     background: #fffff3;
 }
 
+footer p {
+    margin-bottom: 1.5rem;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
