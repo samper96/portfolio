@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peter Samper - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Peter Samper</h1>
+            <p>Software Engineer</p>
+            <div class="header-links">
+                <a href="mailto:petesamper@gmail.com" class="header-link">Email</a>
+                <a href="https://www.linkedin.com/in/petersamper/" class="header-link" target="_blank">LinkedIn</a>
+                <a href="https://github.com/samper96" class="header-link" target="_blank">GitHub</a>
+                <a href="PeterSamper_Resume_2025.pdf" class="header-link" target="_blank">Resume</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Software Engineer with experience building and optimizing high-reliability systems, specializing in
+                    backend infrastructure and performance-critical services. U.S. Air Force veteran bringing a
+                    mission-first mindset and a track record of ownership.</p>
+
+                <p>Passionate about crafting systems that work reliably at scale, make developers'
+                    lives easier, and deliver real value to users. I believe the best solutions come from understanding
+                    the human impact of what we build.</p>
+
+                <p>When I'm not working, you'll find me exploring
+                    functional programming concepts, experimenting with new
+                    technologies, or reading philosophy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Haskell</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & APIs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Kafka</span>
+                        <span class="skill-tag">Solr</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">Humio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Inventory Management System</h3>
+                    <p class="project-description">
+                        A full-stack inventory management system built with modern Python technologies, featuring
+                        real-time updates and automated monitoring capabilities.
+                    </p>
+                    <ul class="project-features">
+                        <li>Complete CRUD operations for product inventory management</li>
+                        <li>Real-time updates via WebSockets</li>
+                        <li>Automated custom background tasks, including low-stock alerts</li>
+                        <li>Containerized deployment with Docker</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">WebSockets</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/samper96/inventory-mgmt" class="btn btn-secondary"
+                            target="_blank">Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Peter Samper. All rights reserved.</p>
+            <p>λx.x</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
